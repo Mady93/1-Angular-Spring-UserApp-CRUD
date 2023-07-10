@@ -1,0 +1,56 @@
+<form class="col-7 ms-auto me-auto border" [formGroup]="form" (submit)="action()" novalidate>
+
+  <div class="form-group">
+    <label for="firstName">Name</label>
+    <input class="form-control" [ngClass]="{
+        'is-invalid': name.invalid && name.touched
+      }" type="text" id="name" name="name" placeholder="Name" formControlName="name" />
+    <!-- <div class="invalid-feedback">Name can contains only letters -at least 2, at most 50.</div> -->
+
+
+    <div class="error">
+      <ul>
+        <li *ngFor="let err of nameErr">{{err}}</li>
+      </ul>
+    </div>
+
+
+
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input class="form-control" [ngClass]="{
+        'is-invalid': email.invalid && email.touched
+      }" type="text" id="email" name="email" placeholder="email@example.com" formControlName="email" />
+    <!-- <div class="invalid-feedback">Please enter a valid email address: email@example.com</div> -->
+
+
+
+    <div class="error">
+      <ul>
+        <li *ngFor="let err of emailErr">{{err}}</li>
+      </ul>
+    </div>
+
+
+  
+  </div>
+ 
+  <input type="submit" value="{{mode}}"/>
+ 
+  <br>
+
+  <span>Would you like to see the users list? <a routerLink="/user-list">List</a></span>
+ 
+  
+<!--<p *ngIf='msg' style="color: rgb(255, 0, 0); font-size: 15px; text-align: center;">
+ {{msg}}
+</p> -->
+
+
+<p *ngIf='msg' [innerHTML]="msg" style="color: rgb(255, 0, 0); font-size: 15px; text-align: center;">
+</p>
+
+</form>
+

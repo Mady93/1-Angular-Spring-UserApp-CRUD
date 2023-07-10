@@ -1,0 +1,79 @@
+ <!--
+ <div class="container mt-5">
+  <h2 class="mb-3 text-center">Angular 16 Server Side Pagination Example</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">*</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let user of Users | paginate: { itemsPerPage: 6, currentPage: pagination, totalItems: allUsers}">
+        <td scope="row">{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="d-flex justify-content-center">
+    <pagination-controls (pageChange)="renderPage($event)"></pagination-controls>
+  </div>
+</div> 
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <h2 class="mb-3 text-center">Angular 16 Server Side Pagination Example</h2>
+   <br>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let user of Users | paginate: { itemsPerPage: size, currentPage: pagination, totalItems: allUsers}">
+      <td scope="row">{{user.id}}</td>
+      <td scope="row"><a routerLink="/edit/{{user.id}}">{{user.name}}</a></td>
+      <td scope="row"><a routerLink="/edit/{{user.id}}">{{user.email}}</a></td>
+      <td scope="row">
+      <input class="add" type="button" routerLink="/edit/{{user.id}}" value="Edit" />
+        <input class="rem" type="button" (click)="deleteById(user.id)" value="Delete" />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="d-flex justify-content-center">
+  <pagination-controls (pageChange)="renderPage($event)"></pagination-controls>
+</div>
+
+
+
+<p *ngIf='msg' [innerHTML]="msg" style="color: rgb(255, 0, 0); font-size: 15px; text-align: center;">
+</p>

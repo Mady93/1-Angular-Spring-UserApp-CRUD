@@ -1,0 +1,227 @@
+header {
+    background-color: black !important;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 8px purple;
+    /* box-shadow: 0px 0px 50px 8px purple; */
+}
+
+header .bg-dark {
+    background-color: black !important;
+}
+
+header .bg-dark .logo {
+    width: 80px;
+    margin-right: 5px;
+}
+
+header fa-icon {
+    font-size: 20px;
+    margin-right: 5px;
+    color: white;
+}
+
+header .navbar-brand span {
+    display: block;
+    float: right;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 900;
+    margin-right: 45px;
+}
+
+.container-title h2 {
+    font-size: 35px;
+}
+
+.container-title .testo {
+    font-size: 10px;
+}
+
+
+/*ROTAZIONE SERCH INPUT E BUTTON*/
+input {
+    display: flex;
+    flex-direction: column;
+    transform: rotatex(10deg);
+    animation: myAnim 4s linear infinite;
+
+    background-image: url("http://127.0.0.1:4200/assets/img/lens.png");
+    background-size: auto 75%;
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+    background-position-y: 50%;
+
+}
+
+
+button {
+    display: flex;
+    flex-direction: column;
+    transform: rotatex(10deg);
+    animation: myAnim 3s linear infinite;
+
+}
+
+@keyframes myAnim {
+
+    0% {
+        transform: scale(0.95);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+
+}
+
+
+
+.rotateAnim {
+    animation: rotateAnimRules 5s infinite;
+}
+
+
+@keyframes rotateAnimRules {
+    from {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(0, 1, 0, 360deg)
+    }
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px 2px rgb(255, 163, 3) !important
+}
+
+input:hover {
+    box-shadow: 0px 0px 5px 2px rgb(255, 163, 3) !important;
+}
+
+
+a.nav-link {
+    color: rgb(255, 163, 3) !important;
+    font-size: 16px !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+::placeholder {
+    color: rgb(255, 163, 3) !important;
+    font-size: 16px !important;
+
+}
+
+
+.sposta1 {
+    /*width: 30% !important;*/
+    margin-left: 53%;
+}
+
+.navbar-expand-lg .navbar-nav{
+    flex-direction: row;
+    margin-top: 0%;
+}
+
+.nabar-expand-lg .navbar-collapre{
+    display: flex!important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: content;
+}
+
+.sposta2 {
+    text-align: center;
+    text-shadow: -1px 0px 4px #000000;
+    background-color: #000000 !important;
+    color: rgb(255, 163, 3) !important;
+}
+
+.sposta3 {
+    text-shadow: -1px 0px 4px #000000;
+    background-color: #000000 !important;
+    color: rgb(255, 163, 3) !important;
+    border-color: #ced4da !important;
+}
+
+*/ .sposta3:hover {
+    text-shadow: -1px 0px 4px #000000;
+    background-color: #000000 !important;
+    border-color: rgb(255, 163, 3) !important;
+}
+
+
+
+
+/*  
+  slick-slider {
+    width: 50%;
+    margin: auto;
+    background: rgb(16, 143, 182);
+  }
+ 
+  .slick-prev,
+  .slick-next {
+    height: 45px;
+    width: 40px;
+    background: rgb(212, 31, 31) !important;
+    z-index: 100;
+  } */
+
+
+
+
+
+
+
+
+/*svg PRODUCTS*/
+
+svg {
+    font-family: "Russo One", sans-serif;
+}
+
+svg text {
+    text-transform: uppercase;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: rgb(255, 3, 230);
+    font-size: 122px;
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(72, 138, 20, 0);
+        stroke: rgb(255, 163, 3);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: rgba(72, 138, 20, 0);
+        stroke: rgb(255, 163, 3);
+    }
+
+    80% {
+        fill: rgba(72, 138, 20, 0);
+        stroke: rgb(255, 163, 3);
+        stroke-width: 3;
+    }
+
+    100% {
+        fill: rgb(255, 163, 3);
+        stroke: rgba(54, 95, 160, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
+

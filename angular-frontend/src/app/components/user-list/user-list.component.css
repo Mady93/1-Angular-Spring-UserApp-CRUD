@@ -1,0 +1,120 @@
+table {
+    border-top: 3px solid purple;
+}
+
+
+thead {
+    /* background-color: dodgerblue !important; */
+    background: linear-gradient(to right, #ff0000, #00ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 70px;
+    vertical-align: middle;
+}
+
+
+tbody {
+    background: url("https://www.gianlucalandone.it/wp-content/uploads/2021/07/bamboo-strategy-bambu-strategia-veronique-nguyen.jpg");
+    background-size: cover;
+}
+
+tbody tr {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.3);
+    /* background: rgba(144, 238, 144, 0.4); */
+    box-shadow: inset 0px 0px 20px green;
+    transform: translate(10px);
+    transition: transform 1.5s
+}
+
+tbody tr td {
+    font-weight: 600;
+    font-family: monospace;
+}
+
+td {
+    background: transparent;
+}
+
+
+th {
+    background-color: transparent;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: purple !important;
+}
+
+.add {
+    /*all: unset;
+    border: 1px solid lightgreen;
+    border-radius: 5px 0px 0px 5px;
+    padding: 3px;
+    background: rgb(0, 128, 255);
+    color: white;
+    width: 48px;
+    text-align: center;*/
+
+    border: 1px solid lightgreen;
+    border-radius: 8px;
+    padding: 3px;
+    color: white;
+    width: 48px;
+    text-align: center;
+    background: linear-gradient(45deg, #fffb00, #48ff00, #ff00c8);
+    font-family: robot;
+    margin-right: 8px;
+}
+
+
+.rem {
+    /*all: unset;
+    border-radius: 0px 5px 5px 0px;
+    padding: 3px;
+    border: 1px solid rgb(0, 195, 255);
+    background: rgb(145, 76, 99);
+    color: white;
+    width: 48px;
+    text-align: center;*/
+
+    border: 1px solid lightgreen;
+    border-radius: 8px;
+    padding: 3px;
+    color: white;
+    width: 48px;
+    text-align: center;
+    background: linear-gradient(45deg, #fffb00, #48ff00, #ff00c8);
+    font-family: robot;
+}
+
+
+
+
+
+
+
+.table {
+    text-align: center !important;
+    /*   margin-top: 100px;*/
+}
+
+
+
+
+
+::ng-deep .ngx-pagination a:not([href]):not([class]),
+::ng-deep .ngx-pagination a:not([href]):not([class]):hover {
+    all:unset;
+  /*color: darkviolet;*/
+}
+
+
+/*::ng-deep .ngx-pagination a:not([href]):not([class]):hover {
+    color: #00ff00;
+}*/
+  

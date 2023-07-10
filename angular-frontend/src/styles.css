@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+
+
+html,
+body {
+    height: 100%;
+}
+
+
+/*.zebra {
+    color: white;
+    background: repeating-linear-gradient(45deg, #90929d, #90929d 30px, #8c8d97 30px, #8c8d97 60px)
+}*/
+
+body {
+    /*font-family: 'Montserrat', sans-serif;*/
+    margin: 0;
+    background-color: #000000 !important;
+    color: white !important;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    margin-top: 10% !important;
+}
+
+svg.svg-inline--fa.fa-plate-wheat {
+    color: rgb(255, 163, 3) !important;
+}
+
+svg.svg-inline--fa.fa-plate-wheat:hover {
+    color: white !important;
+}
+
+
+
+
+.bg-dark {
+    --bs-bg-opacity: unset !important;
+}
+
+
+
+
+

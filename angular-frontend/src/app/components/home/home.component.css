@@ -1,0 +1,11 @@
+img {
+    width:300;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+h1 {
+    color: rgb(255, 163, 3);
+    font-family: robot;
+    font-size: 25px;
+}

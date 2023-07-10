@@ -1,0 +1,44 @@
+
+
+
+
+GET http://localhost:8080/spring-rest-api/users/all?page=0&size=2
+
+
+###
+
+
+
+GET http://localhost:8080/spring-rest-api/users/list
+
+
+###
+
+
+
+
+
+GET http://localhost:8080/spring-rest-api/users/count
+
+
+###
+
+
+
+
+GET http://localhost:8080/spring-rest-api/users/1/one
+
+
+###
+
+
+
+POST http://localhost:8080/spring-rest-api/users/create
+Content-Type: application/json
+
+{
+    "name": "",
+    "email": "abdulbho@yahoo.com"
+}
+
+

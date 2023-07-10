@@ -1,0 +1,27 @@
+form{
+    padding: 5px;
+    margin-top: 100px;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+}
+
+.form-group{
+    margin: 5px;
+}
+
+label{
+    color:black;
+}
+
+span{
+    color: darkviolet; 
+    font-size: 12px;
+}
+
+a{
+    color: rgb(255, 149, 0);
+}
+
+.error{
+    color: rgb(205, 37, 37); 
+    font-size: 13px;
+}
