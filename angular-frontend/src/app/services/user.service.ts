@@ -56,6 +56,19 @@ export class UserService {
 
 
 
+  handleError2(error: HttpErrorResponse): Observable<never> {
+    //debugger;
+    let errors = "";
+
+    if (error.error.message != undefined) {
+      
+    errors = "Timestamp: " + error.error.timestamp + "#Status: " + error.error.status + "#Message: " + error.error.message;
+      
+    } 
+    return throwError(Error(errors));
+  }
+
+
 
 
 
@@ -78,14 +91,14 @@ export class UserService {
 
   getUsers(page: number, size: number): Observable<User> {
     return this.http.get<User>(this.UserAPIBaseUrl + 'all' + '?page=' + (page - 1) + '&size=' + size).pipe(
-      catchError((err: HttpErrorResponse) => this.handleError(err))
+      catchError((err: HttpErrorResponse) => this.handleError2(err))
     );
   }
 
 
   countUsers(): Observable<number> {
     return this.http.get<number>(this.UserAPIBaseUrl + "count").pipe(
-      catchError((err: HttpErrorResponse) => this.handleError(err))
+      catchError((err: HttpErrorResponse) => this.handleError2(err))
     );
   }
 

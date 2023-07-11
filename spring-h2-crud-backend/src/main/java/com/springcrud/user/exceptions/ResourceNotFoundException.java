@@ -1,4 +1,4 @@
-package com.springcrud.user.exceptions;
+/*package com.springcrud.user.exceptions;
 
 public class ResourceNotFoundException extends RuntimeException {
 
@@ -8,4 +8,6 @@ public class ResourceNotFoundException extends RuntimeException {
 	public ResourceNotFoundException() {
         super();
     }
+
 }
+*/

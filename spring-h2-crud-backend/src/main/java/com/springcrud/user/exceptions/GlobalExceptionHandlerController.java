@@ -1,4 +1,4 @@
-package com.springcrud.user.exceptions;
+/*package com.springcrud.user.exceptions;
 
 //import org.springframework.core.annotation.Order;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -14,7 +14,7 @@ import java.util.*;
 import java.time.LocalDateTime;
 
 
-@ControllerAdvice
+//@ControllerAdvice
 //@Order(1)
 public class GlobalExceptionHandlerController {
 
@@ -62,19 +62,7 @@ public class GlobalExceptionHandlerController {
     
     @ExceptionHandler(DataIntegrityViolationException.class)
     public ResponseEntity<ErrorResponse> handleDuplicate(Exception ex) {
-   /* 
-    	Date timestamp = new Date();
-	    int status = HttpStatus.NOT_FOUND.value();
-	    String message = "Email alredy exist";
-	    
-	    ErrorDetails errorDetails = new ErrorDetails(timestamp, status, message);
-
-        return ResponseEntity.status(HttpStatus.CONFLICT).body(errorDetails);
-        
-       */ 
-
-
-    
+  
     	List<String> errors = new ArrayList<>();
         errors.add("Email already exist");
 
@@ -140,11 +128,7 @@ public class GlobalExceptionHandlerController {
     
     
     
-    
-    
-    
-
 
 }
-
+*/
 

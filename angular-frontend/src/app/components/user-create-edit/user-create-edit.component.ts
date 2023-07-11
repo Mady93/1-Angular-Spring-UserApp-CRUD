@@ -136,7 +136,7 @@ export class UserCreateEditComponent implements OnInit {
   action() {
     //debugger;
 
-    if (!this.form.valid) return;
+    //if (!this.form.valid) return;
 
 
     if (this.mode == "edit") {

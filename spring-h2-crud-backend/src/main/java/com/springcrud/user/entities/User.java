@@ -24,7 +24,7 @@ public class User {
 
 	
 	@NotNull(message="name cannot be blank")
-	@Size(min = 2, message = "Name must be at least 5 characters long")
+	@Size(min = 2, message = "Name must be at least 2 characters long")
 	@Pattern(regexp = "[A-Za-z]+", message = "Name must not contain numbers")
 	//@Pattern(regexp = "^[A-Za-z.-]+(\\s*[A-Za-z.-]+)*$", message = "Name must not contain number") // accetta tutto eccetto numeri
 	private String name;

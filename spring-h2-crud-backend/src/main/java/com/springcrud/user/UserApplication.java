@@ -18,7 +18,7 @@ public class UserApplication {
 	}
 	
 	
-	 
+	  /* 
 	@Bean
     CommandLineRunner init(UserRepository userRepository) {
         return args -> {
@@ -29,5 +29,5 @@ public class UserApplication {
             userRepository.findAll().forEach(System.out::println);
         };
     }
-
+*/
 }

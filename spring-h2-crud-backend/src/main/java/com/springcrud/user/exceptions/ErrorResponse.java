@@ -1,4 +1,4 @@
-package com.springcrud.user.exceptions;
+/*package com.springcrud.user.exceptions;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -33,5 +33,5 @@ public class ErrorResponse {
         this.errors = errors;
     }
     
-}
+}*/
 

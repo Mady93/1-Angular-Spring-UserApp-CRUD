@@ -1,4 +1,4 @@
-package com.springcrud.user.controllers;
+/*package com.springcrud.user.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.server.EntityLinks;
@@ -21,7 +21,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import java.util.Optional;
 
-
 import com.springcrud.user.repositories.UserRepository;
 import com.springcrud.user.apiDetails.ApiResponse;
 import com.springcrud.user.apiDetails.ApiResponseDelete;
@@ -31,6 +30,7 @@ import javax.validation.Valid;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import com.springcrud.user.exceptions.ResourceNotFoundException;
 
+
 // page
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Page;
@@ -38,17 +38,10 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
 
-//import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @RestController
 @RequestMapping(path = "/spring-rest-api", produces = "application/json")
-/*@CrossOrigin(
-	    origins = "http://localhost:4200", //angular home page
-	    methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.PATCH, RequestMethod.DELETE},
-	    allowedHeaders = "Authorization",
-	    maxAge = 3600 // Specifica la durata massima della risposta in cache (in secondi)
-	)*/
 @CrossOrigin(origins = "http://localhost:4200") //angular home page
 
 public class UserController {
@@ -74,6 +67,9 @@ public class UserController {
 		return ResponseEntity.status(HttpStatus.CREATED)
 		        .body(new ApiResponse(HttpStatus.CREATED.value(), message, savedUser));
 	}
+	
+	
+	
 
 	
 	
@@ -207,7 +203,7 @@ public ResponseEntity<User> getUserById(@PathVariable("id") Long id) throws Reso
 			}		
 	}
 	
-	
+	*/
 	
 	
 
@@ -226,13 +222,21 @@ public ResponseEntity<User> getUserById(@PathVariable("id") Long id) throws Reso
 	    } else {
 	        throw new ResourceNotFoundException();
 	    }
-	}*/
+	}
 
+	*/
 	
 	
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	/*
 	
 	@DeleteMapping(path = "/users/{id:\\d+}/delete")
 	public ResponseEntity<Object> deleteUser(@PathVariable("id") Long id) throws ResourceNotFoundException, IllegalArgumentException {
@@ -254,7 +258,8 @@ public ResponseEntity<User> getUserById(@PathVariable("id") Long id) throws Reso
 	    }
 	}
 	
-	
 
 }
+*/
 
+	

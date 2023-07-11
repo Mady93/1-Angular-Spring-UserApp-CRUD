@@ -1,9 +1,10 @@
-package com.springcrud.user.exceptions;
+/*package com.springcrud.user.exceptions;
 
 
 import java.util.Date;
 
 public class ErrorDetails {
+	
 	private Date timestamp;
 	private int status;
 	private String message;
@@ -42,4 +43,4 @@ public class ErrorDetails {
 
 	
 	
-}
+}*/
