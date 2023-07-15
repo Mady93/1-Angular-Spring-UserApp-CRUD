@@ -1,7 +1,7 @@
 package com.springcrud.user.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.hateoas.server.EntityLinks;
+//import org.springframework.hateoas.server.EntityLinks;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -55,8 +55,8 @@ public class UserController {
 
 	private final UserRepository userRepo;
 
-	@Autowired
-	EntityLinks entityLinks;
+	/*@Autowired
+	EntityLinks entityLinks;*/
 
 	@Autowired
 	public UserController(UserRepository userRepo) {
